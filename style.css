@@ -1,0 +1,30 @@
+body {
+    margin-left: 20px;
+}
+.card{
+    width: 500px;
+    background-color: lightgray;
+    border: 1px solid darkgray;
+}
+ .verktøy{
+    background-color: #3cba54;
+    color: white;
+ }   
+
+ .html{
+    background-color: #4885ed;
+    color: white;
+ }
+ .css{
+    background-color: #db3236;
+    color: white;
+ }
+ 
+ .javaScript{
+    background-color: #f4c20d;
+    color: white;
+ }
+ .kropp{
+    background-color: #36393f;
+    color: white;
+ }
