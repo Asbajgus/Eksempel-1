@@ -25,11 +25,3 @@ function updateImage(part, direction) {
     imgElement.src = partImages[currentIndex[part]];
 }
 
-const arrowButtons = document.querySelectorAll(".arrow");
-arrowButtons.forEach(button => {
-    button.addEventListener("click", () => {
-        const part = button.getAttribute("data-part");
-        const direction = button.getAttribute("data-direction");
-        updateImage(part, direction);
-    });
-});

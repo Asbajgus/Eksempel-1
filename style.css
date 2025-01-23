@@ -28,3 +28,15 @@ body {
     background-color: #36393f;
     color: white;
  }
+
+ #conteiner {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+}
+
+.grid {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as per your requirement */
+   gap: 20px;
+}
