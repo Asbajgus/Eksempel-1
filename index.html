@@ -101,49 +101,7 @@
         <button class="arrow" data-part="legs" data-direction="next">⯈</button>
     </div>
 </div>
-
-<script>
-    // Image arrays for each body part
-    const images = {
-        head: ["Bilder/head1.png", "Bilder/head2.png", "Bilder/head3.png", "Bilder/head4.png"],
-        body: ["Bilder/body1.png", "Bilder/body2.png", "Bilder/body3.png", "Bilder/body4.png"],
-        legs: ["Bilder/legs1.png", "Bilder/legs2.png", "Bilder/legs3.png", "Bilder/legs4.png"]
-    };
-
-    // Current indices for each body part
-    const currentIndex = {
-        head: 0,
-        body: 0,
-        legs: 0
-    };
-
-    // Function to update image source
-    function updateImage(part, direction) {
-        const partImages = images[part];
-        const totalImages = partImages.length;
-
-        // Update the current index
-        if (direction === "next") {
-            currentIndex[part] = (currentIndex[part] + 1) % totalImages;
-        } else if (direction === "prev") {
-            currentIndex[part] = (currentIndex[part] - 1 + totalImages) % totalImages;
-        }
-
-        // Update the image source
-        const imgElement = document.getElementById(part);
-        imgElement.src = partImages[currentIndex[part]];
-    }
-
-    // Add event listeners to buttons
-    const arrowButtons = document.querySelectorAll(".arrow");
-    arrowButtons.forEach(button => {
-        button.addEventListener("click", () => {
-            const part = button.getAttribute("data-part");
-            const direction = button.getAttribute("data-direction");
-            updateImage(part, direction);
-        });
-    });
-</script>
+<script src="script.js"></script>
 </body>
 
 </html>
